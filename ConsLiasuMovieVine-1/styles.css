@@ -1,0 +1,223 @@
+body {
+    background-color: black;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+div#main-container {
+    width: 95vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+p {font-size: larger;}
+/* Header */
+img#logo {
+    height: 50vh;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+h1#about {
+    text-align: center;
+    color: red;
+    width: 90vw;
+}
+/* other movies and series */
+
+.other_movies, .other_series, .other_animations {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.one, .two, .three {
+    width: 30%;
+}
+button {
+    background-color: wheat;
+}
+.other_movies ul, .other_series ul, .other_animations ul {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+.twenty22, #recommended {
+    border-bottom: solid 1px white;
+}
+p.movie-info {
+    line-height: 2em;
+}
+p.movie-info span {
+    color: red;
+    font-weight: 600;
+}
+p.movie-info strong {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+/* Movie Search Form */
+#search-form {
+    margin-top: 50px;
+    text-align: center;
+}
+#movie_title {
+    border-radius: 5px;
+    text-align: center;
+    height: 5vh;
+    width: 20vw;
+    font-weight: 600;
+    background-color: wheat;
+}
+#search, #submit {
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: wheat;
+    font-weight: 600;
+    height: 5vh;
+    padding: 0 2vw;
+    border: 2px outset wheat; 
+}
+#search:active, #submit:active, .to-top:active {
+    border: 2px outset black;
+}
+/* Search-Results Div */
+#results {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: red 2px dotted;
+    border-top: red 2px dotted;
+}
+img#resulting-image {
+    padding-top: 50px;
+}
+img#resulting-image:hover {
+    width: 40vw;
+}
+div#movie-details-result {
+   width: 55vw;
+}
+p.movie-info {
+    line-height: 2em;
+}
+p.movie-info span {
+    color: red;
+    font-weight: 600;
+}
+p.movie-info strong {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* link */
+.to-top {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0 10px 80%;
+    background-color: red;
+    border-radius: 10px;
+    color: wheat;
+    font-weight: 600;
+    height: 2vh;
+    padding: 5px;
+    border: 2px outset wheat;     
+}
+
+/* customer reviews form */
+#customer-reviews-form {
+    margin: 50px 0;
+}
+legend h2 {
+    border-bottom: wheat solid 5px;
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+textarea {
+    background-color: wheat;
+    width: 50vw;
+    border-radius: 5px;
+    height: 20vh;
+    padding: 10px;
+
+}
+
+/* Comments div*/
+ul#added-comments {
+    list-style-type: circle;
+    line-height: 30px;
+    background-color: wheat;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 850px) {
+    
+    div#main-container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    p {font-size: medium;}
+
+    /* Header */
+    img#logo {
+        height: 20vh;
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+    h1#about {
+        text-align: center;
+        color: red;
+        font-size: larger;
+    }
+
+    /* other movies and series*/
+    .other_movies, .other_series, #recommendations, .other_animations {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    .one, .three, .two {
+        margin: 20px 0;
+        width: 150%;
+    }
+    /* Search-Results Div */
+    #results {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    img#resulting-image {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+    img#resulting-image:hover {
+        width: 80vw;
+        height: 80vh;
+    }
+    div#movie-details-result {
+        text-align: center;
+        margin: auto;
+    }
+    /* customer reviews form */
+    legend h2 { font-size: larger;}
+}
+
+@media screen and (max-width: 450px) { 
+    #main-container {
+        width: 100vw;
+    }
+    .other_movies, .other_series, #recommendations, .other_animations {
+        width: 70vw;
+    }
+    .one, .three, .two {
+        width: 70vw;
+    }
+    .to-top {
+        height: auto;
+    }
+}
